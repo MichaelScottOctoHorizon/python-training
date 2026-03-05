@@ -1,0 +1,20 @@
+Git is a version control system that allows developers to create and manage repositories or projects safely, whether working alone or as part of a team. 
+It tracks changes to files through commits and allows developers to synchronize their work with others using commands like git pull and git push. 
+Code clashes (or merge conflicts) can occur when two developers modify the same part of a file. In such cases, Git requires the developer to manually 
+resolve the conflict by choosing which changes to keep or by combining the changes.
+
+GitHub is an online platform that uses Git to host repositories in the cloud, making it easy for developers to access, manage, and share projects from 
+anywhere. It adds extra features like collaboration tools, issue tracking, pull requests, code reviews, and project management boards. Github also allows 
+developers to see in a more manageable way the changes that occurred on projects and repositories in a more collaborative and easy to visualize manner.
+It is also a hub that allows developers to contribute and learn from other developers open source projects online.
+
+
+	1. The main difference between “git add” and “git commit” is that “git add” is the command that is used to specify what files you want to be considered for the next commit. While “git commit” is the command of the actual saving a snapshot of those added changes to your local repository version.
+
+	2. “Git push” is that command that is used to upload commits from your local repository to a remote repository like GitHub. It updates the remote branch with the changes you’ve committed locally.
+
+	3. When you make a commit using Git, it only includes the changes that were staged using the “git add” command. Any changes you make after the commit are not included in that commit, because commits are snapshots of the staged changes at that moment.
+
+	4. A local repository is your personal copy of a project on your computer, where you can make changes, commit, and experiment without affecting the main project. A remote repository is usually the main version of the project hosted on platforms like GitHub.
+
+	5. Teams don’t work directly on production code because any changes done can potentially break the application and affect the end users right away which can cost the company lots of money and create a negative experience for users. Doing this locally eliminates those issues and provides freedom to developers to experiment with new features freely until the application is working properly before merging changes to production.
