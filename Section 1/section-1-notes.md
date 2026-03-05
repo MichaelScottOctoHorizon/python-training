@@ -1,0 +1,2 @@
+
+Python is a programming language that is widely used for server side web development, data science, artificial intelligence, automation, and scientific computing. It was developed to be easily human readable and is also known as the easiest programming language for beginners. Unlike some programming languages such as C or C++ that need to produce a separate executable file to run, Python runs code directly through the interpreter.
