@@ -1,0 +1,9 @@
+Strings are immutable in python because they can’t be formatted in place. Instead when trying to change a string , python creates a new string to replace the old string which can appear as if the string was mutated.The reasoning behind why strings were designed this way is because by making them immutable they are in turn more performant and memory efficient. This also allows them to be more predictable and consistent due to the fact when passing a string to a function they can’t be accidentally changed.
+
+When trying to change a string’s character in place you will get a “object does not support item assignment” error because strings in python or immutable objects.
+
+When getting user input using the function “input()” , Python is designed to read raw text from the keyboard. With strings being the safest and most universal data type python uses strings as default for user input instead of guessing the type of what the user is entering.
+
+The difference between "10" + "20" and 10 + 20 is that the first group is just appending two strings together which makes “1020”, while the second is two integers being computationally added together to return a new value which is the value 30. The values data types is what determines how the operators will treat them.  Two strings added together just appends, two integers or floats added together does mathematical computation, and if a number whether it’s a int or float is added to a string , the overall outcome will be a string result.
+
+There are many reasons why “f-strings” are preferred over string concatenation. Some of the main reasons are that it makes the code more readable, you don’t have to worry about manually doing type conversions which saves you adding more lines of code, you can place expressions inside of the string and even call functions, and it’s generally a much cleaner format.
