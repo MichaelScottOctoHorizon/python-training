@@ -125,9 +125,10 @@ def max_of_two():
 def max_of_three():
     print(f"\n7.  Maximum of three numbers -----------------------\n\n")
 
-    maximum = 0
+    #Boris amend Bug fixed for all negative inputs
+    maximum = get_user_integer() #I've changed this from 0 to getting the user's first number as if the user enters only negatives the zero will always be the max
 
-    for _ in range(3):
+    for _ in range(2):
         input_number = get_user_integer()
 
         if maximum <= input_number:
@@ -531,7 +532,7 @@ def task_3():
     # pass_or_fail()
     # grade_calculator()
     # max_of_two()
-    # max_of_three()
+    max_of_three()
     # leap_year_checker()
     # simple_login()
     # age_group_classification()
@@ -542,5 +543,5 @@ def task_3():
     # password_length_validation()
     # time_based_greeting()
     # loan_eligibility_checker()
-    result_system_login()
+    # result_system_login()
 task_3()

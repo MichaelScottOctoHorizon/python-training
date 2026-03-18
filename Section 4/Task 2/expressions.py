@@ -22,6 +22,11 @@ def comparing_expressions():
     print(f"\tTest 2 - (20 ** 0 * 10 = 10) == (10 * 1 / 1 = 10) : {(20 ** 0 * 10) == (10 * 1 / 1)}")
     print(f"\tTest 3 - 20 == 5? : {20 == 5}")
     print(f"\tTest 4 - 100 ==  1000 / 10? : {100 ==  1000 / 10}")
+    #Boris amends made 1 -------------------------------------------------------------
+    #Clear examples of ** power/exponent computations, I've showed how python orders it's computations step by step and how it gets to it's end value
+    print(f"\tTest 5 - 2 ** 3 = {2 ** 3} (2 to the power of 3) => 2 x 2 x 2 => 4 x 2 = 8")
+    print(f"\tTest 6 - 3 ** 2 + 4 = {3 ** 2 + 4} (power happens before addition) => 3 * 3 + 2 + 4 => 9 + 2 + 4 = 15")
+    #Boris amends made 1 -------------------------------------------------------------
     print(f"\n---------Expression combining comparison and arithmetic---------\n")
 
 #3. Expression using parentheses to change the result
@@ -49,7 +54,8 @@ def chained_comparison():
     print(f"\n---------Chained comparison (e.g. 1 < x < 10)---------\n")
     age = int(input("\t\nEnter your age: "))
 
-    if age > 18 and age < 50:
+    #Boris amend done to make the logic more explicit to chained comparison Vs 2 seperate conditions compared
+    if 18 < age < 50: #Changed to be more explicit as in using python's explicit chaining syntax
         print("You are a young adult! ")
     else:
         print("You are not a young adult! ")
@@ -79,7 +85,7 @@ def short_circuit_example():
 
 #7. Expression that returns a boolean
 #This function shows what people are allowed based on their country, Cayman Islands and Dubai are allowed.
-def boolean_expressions():
+def boolean_expressions_returned():
 
     persons = [
         { "name": "Michael Scott", "country": "Cayman Islands"},
@@ -138,15 +144,15 @@ def expression_debugging():
     print(f"sum is: {sum}")
 
 def task_2():
-    mixed_arithmetic()
-    comparing_expressions()
-    parentheses_change_result()
-    boolean_expressions()
+    # mixed_arithmetic()
+    # comparing_expressions()
+    # parentheses_change_result()
+    # boolean_expressions()
     chained_comparison()
-    short_circuit_example()
-    boolean_expressions()
-    integer_expression()
-    float_expression()
-    expression_debugging()
+    # short_circuit_example()
+    # boolean_expressions_returned()
+    # integer_expression()
+    # float_expression()
+    # expression_debugging()
 
 task_2()

@@ -16,6 +16,7 @@ def display_program_options():
     print("|\tEnter 9 - \t Check for membership (string and list)")
     print("|\tEnter 10 - \t Identity list and int comparison")
     print("|\tEnter 11 - \t Operator Precedence Explainations")
+    print("|\tEnter 12 - \t More logical 'not' examples")
 
     print("\n")
 
@@ -279,9 +280,27 @@ def operator_precedence_explainations():
     "then everything contained in the brackets are added first so 5 + 5 = 10, then multiplication is done giving us 10 * 10 = 100")
 
 
-
-
 #Operator Precedence Explains------------------------------------------------------------------------------------------------------------^^^
+
+#12.    More logical 'not' examples------------------------------------------------------------------------------------------------------------vvv
+#Boris amend 2
+def more_logical_not_examples():
+    etherium_chain = {"Eth","USDT", "USDC","Chainlink", "Uniswap", "Shib"}
+    solana_chain = {"Sol","USDC", "Myro","Bonk", "Render", "Shib"}
+
+    stable_coins = ["USDC", "USDT", "BUSD"]
+    counter = 1
+
+    crypto_chains_combined = etherium_chain | solana_chain #This combines the etherium chain and solana chain as 1 Set and removes the duplicates like USDC
+
+    print(f"\n\tBelow is a list of crypto that are in both the eth and sol chains but are 'not' stable coins\n")
+    
+    for crypto in crypto_chains_combined:
+         if crypto not in stable_coins: #not example 1
+            print(f"\t\t{counter}. {crypto}")
+            counter+=1
+
+#12.    More logical 'not' examples------------------------------------------------------------------------------------------------------------^^^
 
 #This function's single responsibility is to run other programs
 def programs_loader():
@@ -318,5 +337,7 @@ def programs_loader():
         identity_integers_and_list() #Program 10
     if program_option == 11:
         operator_precedence_explainations() #Program 11
+    if program_option == 12:
+        more_logical_not_examples() #Program 12
 
 programs_loader()
